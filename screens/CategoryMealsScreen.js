@@ -25,13 +25,7 @@ CategoryMealsScreen.navigationOptions = navigationData => {
 	const selectedCategory = CATEGORIES.find(c => c.id === catId);
 
 	return {
-		headerTitle: selectedCategory.title,
-		headerStyle: {
-			backgroundColor:
-				Platform.OS === "android" ? selectedCategory.color : ""
-		},
-		headerTintColor:
-			Platform.OS === "android" ? "white" : selectedCategory.color
+		headerTitle: selectedCategory.title
 	};
 };
 
