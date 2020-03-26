@@ -4,11 +4,8 @@ import {
 	Text,
 	FlatList,
 	StyleSheet,
-	TouchableOpacity,
-	Platform
+	TouchableOpacity
 } from "react-native";
-
-import Colors from "../constants/Colors";
 
 import { CATEGORIES } from "../data/dummy-data";
 
@@ -43,10 +40,6 @@ const CategoriesScreen = props => {
 			numColumns={2}
 		/>
 	);
-};
-
-CategoriesScreen.navigationOptions = {
-	headerTitle: "Meal Categories"
 };
 
 const styles = StyleSheet.create({
