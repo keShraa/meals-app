@@ -12,9 +12,7 @@ import { CATEGORIES } from "../data/dummy-data";
 const CategoriesScreen = props => {
 	const navigateToCategory = ({ item }) => {
 		props.navigation.navigate("CategoryMeal", {
-			categoryId: item.id,
-			color: item.color,
-			title: item.title
+			categoryId: item.id
 		});
 	};
 
